@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; margin: 20px; max-width: 1000px; }
+.card { border: 1px solid #ddd; padding: 16px; margin: 16px 0; border-radius: 10px; }
+.row { display: flex; gap: 10px; margin: 10px 0; }
+input, select { padding: 8px; flex: 1; }
+button { padding: 10px 14px; cursor: pointer; }
+#grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 12px; }
+.room { border: 1px solid #eee; padding: 10px; border-radius: 10px; }
+.slot { padding: 6px; border-radius: 6px; margin: 6px 0; border: 1px solid #ddd; }
+.available { background: #f5fff5; }
+.booked { background: #fff5f5; }
+pre { white-space: pre-wrap; }

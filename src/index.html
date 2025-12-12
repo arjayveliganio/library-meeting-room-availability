@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Library Meeting Room Availability</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <h1>Library Meeting Room Availability</h1>
+
+  <section class="card">
+    <h2>Check availability</h2>
+    <label>Date: <input id="date" type="date" /></label>
+    <button id="load">Load</button>
+    <div id="grid"></div>
+  </section>
+
+  <section class="card">
+    <h2>Make a booking</h2>
+    <div class="row">
+      <input id="name" placeholder="Name" />
+      <input id="email" placeholder="Email" />
+    </div>
+    <div class="row">
+      <select id="room">
+        <option>ROOM-A</option><option>ROOM-B</option><option>ROOM-C</option><option>ROOM-D</option><option>ROOM-E</option>
+      </select>
+      <select id="slot">
+        <option>09:00-10:00</option><option>10:00-11:00</option><option>11:00-12:00</option>
+        <option>13:00-14:00</option><option>14:00-15:00</option><option>15:00-16:00</option>
+      </select>
+    </div>
+    <button id="book">Book</button>
+    <pre id="bookResult"></pre>
+  </section>
+
+  <section class="card">
+    <h2>Cancel a booking</h2>
+    <input id="bookingId" placeholder="Booking ID (e.g. 2025-12-12__ROOM-A__09:00-10:00)" />
+    <button id="cancel">Cancel</button>
+    <pre id="cancelResult"></pre>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+</html>
